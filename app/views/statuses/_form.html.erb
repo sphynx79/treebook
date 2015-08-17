@@ -1,18 +1,29 @@
-<%= simple_form_for(@status) do |f| %>
-  <% if @status.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h2>
+<%= form_for(@status, :html => {:class => "form-horizontal"}) do |f| %>
+<% if @status.errors.any? %>
+<div id="error_explanation">
+   <h2><%= pluralize(@status.errors.count, "error") %> prohibited this status from being saved:</h2>
 
-      <ul>
-      <% @status.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+   <ul>
+      <% @status.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <%= f.input :content %>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+   </ul>
+</div>
 <% end %>
+
+<div class="form-group">
+   <%= f.label :content, "Content:", class: "col-sm-2 control-label" %>
+   <div class="col-md-8">
+      <%= f.text_area :content, class: "form-control", rows: 10 %>
+   </div>
+</div>
+<div class="form-group">
+   <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit nil, :class => 'btn btn-default' %>
+   </div>
+</div>
+
+<% end %>
+
+
+
