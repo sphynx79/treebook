@@ -1,5 +1,6 @@
 class StatusesController < ApplicationController
   before_action :set_status, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:new, :create, :edit, :destroy]
 
   # GET /statuses
   # GET /statuses.json
@@ -72,4 +73,5 @@ class StatusesController < ApplicationController
     def status_params
       params.require(:status).permit(:user_id, :content)
     end
+    
 end
