@@ -19,10 +19,15 @@ three:
    last_name: Scarpa
    email: marco@gmail.com
    encrypted_password: "$2a$10$8uCZ9wCTsFoqa0aIfpssne4qtchcpqhepdU5WylZwh5GBAkgFUEYe"
-
 four:
    first_name: Gianni
    last_name: Pacciolla
    profile_name: Sphynx
    email: giovanni@gmail.com
+   encrypted_password: "$2a$10$8uCZ9wCTsFoqa0aIfpssne4qtchcpqhepdU5WolZwh4GBAkgFWEYe"
+five:
+   first_name: Fabrizio
+   last_name: Santacroce
+   profile_name: santacroce fabrizio
+   email: fabrizio@gmail.com
    encrypted_password: "$2a$10$8uCZ9wCTsFoqa0aIfpssne4qtchcpqhepdU5WolZwh4GBAkgFWEYe"
