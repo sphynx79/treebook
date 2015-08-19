@@ -6,6 +6,11 @@ class User < ActiveRecord::Base
   
   has_many :statuses
 
+  validates :first_name, :last_name, :profile_name, :email, presence: true
+  validates_uniqueness_of :profile_name
+
+
+
   def full_name
      first_name + " " + last_name
   end
