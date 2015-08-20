@@ -31,3 +31,9 @@ five:
    profile_name: santacroce fabrizio
    email: fabrizio@gmail.com
    encrypted_password: "$2a$10$8uCZ9wCTsFoqa0aIfpssne4qtchcpqhepdU5WolZwh4GBAkgFWEYe"
+six:
+   first_name: Giaocomo
+   last_name: Perfetto
+   profile_name: perfetto_1
+   email: giaocomo@gmail.com
+   encrypted_password: "$2a$10$8uCZ9wCTsFoqa0aIfpssne4qtch3pqhepdU5WolZwh4GBAkgFWEYe"
