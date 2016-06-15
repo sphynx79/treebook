@@ -7,7 +7,7 @@ gem 'rails', '4.2.3'
 gem 'sqlite3'
 
 # Usato per l'autenticazioner
-gem "devise"
+gem 'devise', '~> 3.5.3'
 
 gem 'gravtastic'
 
